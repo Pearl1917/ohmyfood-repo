@@ -21,4 +21,29 @@ body {
   width: 200px;
   align-self: center;
   padding: 10px;
+}
+
+.rest-col {
+  width: 50%;
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-bottom: 3%;
+  align-items: flex-end;
+}
+
+.rest-col img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50%;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.rest-detail {
+  padding: 5%;
+  padding-top: 0%;
 }/*# sourceMappingURL=main.css.map */
