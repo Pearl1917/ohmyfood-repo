@@ -20,8 +20,18 @@ body{
     align-self: center;
     padding: 10px;
 }
+.Restaurants{
+    background-color: #f2f2f2;
+    margin-left: 25px;
+    padding: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    width: 70%;
+    flex: 1;
+}
 .rest-col{
-    width: 50%;
+    width: 70%;
     height: 250px;
     background-color: white;
     border-radius: 15px;
