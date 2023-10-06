@@ -9,14 +9,28 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        background-color: #f2f2f2
+        background-color: rgba(231, 230, 230, 0.74)
     }
 
-    .top {
-        display: flex;
-        justify-content: center;
-
+    .purple {
+        background:linear-gradient(#FF79DA,#9356DC);
+        border-radius: 20px;
+        border-top: #FF79DA;
+        border-bottom: #9356DC;
+        border-left: #FF79DA;
+        border-right: #9356DC;
+        width: 200px;
+        height: 40px;
+        align-self: center;
+        margin-bottom: 50px;
     }
+    .purple a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+
 
     #logo {
         padding-top: 20px;
@@ -35,14 +49,14 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: aqua;
+        background-color: #f6f6f6;
         text-align: center;
     }
 
     .How-it-works {
         display: flex;
         flex-direction: column;
-        background-color: pink;
+        background-color: white;
     }
 
     .How-it-works h2 {
@@ -61,32 +75,29 @@
     .nav-2 h4 {
         margin-top: 15px;
     }
-.circle{
-    background-color: purple;
-    border: 2px solid black;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    align-self: center;
-    position: absolute;
-    left: 25px;
-}
-    // .nav-2 h4{
-    // color: black;
-    // border: 2px solid black;
-    // border-radius: 20px;
-    // width: 100px;
-    // align-self: center;
-    // padding: 10px;
-    // }
+
+    .circle {
+        color: white;
+        background-color: #9356DC;
+        border: 2px solid #9356DC;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        align-self: center;
+        position: absolute;
+        left: 25px;
+    }
+
     .bubble-1 {
         display: flex;
         width: 280px;
         height: 50px;
         border-radius: 20px;
-        border: 2px solid black;
         padding-left: 20px;
         background-color: #f2f2f2;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin-bottom: 3%;
     }
 
     .bubble-2 {
@@ -94,9 +105,11 @@
         width: 280px;
         height: 50px;
         border-radius: 20px;
-        border: 2px solid black;
         padding-left: 20px;
         background-color: #f2f2f2;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin-bottom: 3%;
     }
 
     .bubble-3 {
@@ -104,9 +117,11 @@
         width: 280px;
         height: 50px;
         border-radius: 20px;
-        border: 2px solid black;
         padding-left: 20px;
-        background-color: #f2f2f2
+        background-color: #f2f2f2;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin-bottom: 3%;
     }
 
     .fa-mobile-screen-button {
@@ -160,6 +175,11 @@
         line-height: 5px;
     }
 
+    .rest-col a {
+        text-decoration: none;
+        color: black;
+    }
+
     .foot {
         color: white;
         background-color: black;
@@ -167,6 +187,185 @@
         flex-direction: column;
         width: 89%;
         padding: 20px;
-        margin-top: 20px;
+        // margin-top: 20px;
+    }
+
+    // Menu 1
+    body {
+        animation-name: loadinganimation;
+        animation-duration: .8s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+    }
+
+    .top a {
+        text-decoration: none;
+        color: black;
+        align-self: center;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .fa-arrow-left {
+        color: black;
+        font-size: x-large;
+    }
+
+    .background {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // height: 200px;
+        background-color: #f6f6f6;
+    }
+
+    #image {
+        width: 100%;
+    }
+
+    .menu-title h3 {
+        margin-left: 20px;
+        font-weight: normal;
+    }
+
+    .menu-image img {
+        object-fit: cover;
+    }
+
+    .The-full-palette {
+        display: flex;
+        flex-direction: column;
+        background-color: #f6f6f6;
+        border-radius: 30px;
+        position: relative;
+        top: -40px;
+    }
+
+    .The-full-palette h2 {
+        padding-left: 20px;
+    }
+
+    .nav-3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: #f6f6f6;
+    }
+
+    .nav-3 h4 {
+        margin-top: 15px;
+    }
+
+    .nav-4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: #f6f6f6;
+    }
+
+    .nav-4 h4 {
+        margin-top: 15px;
+    }
+
+    .nav-5 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: #f6f6f6;
+    }
+
+    .nav-5 h4 {
+        margin-top: 15px;
+    }
+
+    .food-1 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 55px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin-bottom: 3%;
+        padding-left: 12px;
+        padding-top: 18px;
+        line-height: 10px;
+    }
+
+    .food-1 h4 {
+        margin: 0px;
+    }
+
+    .food-1 li {
+        list-style: none;
+        align-self: flex-end;
+        position: relative;
+        left: -20px;
+        top: -25px;
+    }
+
+    .food-2 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 55px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin-bottom: 3%;
+        padding-left: 12px;
+        padding-top: 18px;
+        line-height: 10px;
+    }
+
+    .food-2 h4 {
+        margin: 0px;
+    }
+
+    .food-2 li {
+        list-style: none;
+        align-self: flex-end;
+        position: relative;
+        left: -20px;
+        top: -25px;
+    }
+
+    .food-3 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 55px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin-bottom: 3%;
+        padding-left: 12px;
+        padding-top: 18px;
+        line-height: 10px;
+    }
+
+    .food-3 h4 {
+        margin: 0px;
+    }
+
+    .food-3 li {
+        list-style: none;
+        align-self: flex-end;
+        position: relative;
+        left: -20px;
+        top: -25px;
     }
 }
