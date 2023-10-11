@@ -13,7 +13,7 @@
     }
 
     .purple {
-        background:linear-gradient(#FF79DA,#9356DC);
+        background: linear-gradient(#FF79DA, #9356DC);
         border-radius: 20px;
         border-top: #FF79DA;
         border-bottom: #9356DC;
@@ -24,7 +24,8 @@
         align-self: center;
         margin-bottom: 50px;
     }
-    .purple a{
+
+    .purple a {
         color: white;
         text-decoration: none;
     }
@@ -139,6 +140,14 @@
         margin-right: 10px;
     }
 
+    .heart {
+        background-color: aqua;
+    }
+    svg{
+        color: red;
+        fill: rebeccapurple;
+    }
+
     .Restaurants {
         background-color: #f2f2f2;
         padding: 3%;
@@ -230,16 +239,22 @@
         width: 100%;
     }
 
+    #image-2 {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
     .menu-title h3 {
         margin-left: 20px;
         font-weight: normal;
     }
 
-    .menu-image img {
+    .background-image img {
         object-fit: cover;
     }
 
-    .The-full-palette {
+    .restaurant-name {
         display: flex;
         flex-direction: column;
         background-color: #f6f6f6;
@@ -248,7 +263,7 @@
         top: -40px;
     }
 
-    .The-full-palette h2 {
+    .restaurant-name h2 {
         padding-left: 20px;
     }
 
@@ -362,6 +377,33 @@
     }
 
     .food-3 li {
+        list-style: none;
+        align-self: flex-end;
+        position: relative;
+        left: -20px;
+        top: -25px;
+    }
+
+    .food-4 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 55px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin-bottom: 3%;
+        padding-left: 12px;
+        padding-top: 18px;
+        line-height: 10px;
+    }
+
+    .food-4 h4 {
+        margin: 0px;
+    }
+
+    .food-4 li {
         list-style: none;
         align-self: flex-end;
         position: relative;
