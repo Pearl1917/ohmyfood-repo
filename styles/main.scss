@@ -9,36 +9,42 @@ body {
     // margin-top: 1%;
     // border: none;
     // width: 92%;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-name: loadAnimation;
+    //     animation-duration: 0.7s;
+    //     animation-timing-function: ease-in-out;
+    //     animation-delay: 0s;
+    //     animation-iteration-count: 1;
+    //     animation-name: loadAnimation;
 }
+
 @keyframes rotate {
     0% {
-      transform: rotate(0);
+        transform: rotate(0);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  @keyframes move {
+}
+
+@keyframes move {
     to {
-      z-index: -1;
-      opacity: 0;
+        z-index: -1;
+        opacity: 0;
     }
-  }
+}
+
 @keyframes loadAnimation {
-0% {
-transform: translateY(-100px);
-opacity: 0;
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-100% {
-transform: translateY(0);
-opacity: 1;
-}
-}
+
 @media (min-width: 320px) {
     .sub-heading {
         display: flex;
@@ -218,6 +224,7 @@ opacity: 1;
         transition: 0.3s;
         margin-bottom: 3%;
         align-items: flex-end;
+        position: relative;
     }
 
     .rest-col img {
@@ -387,8 +394,8 @@ opacity: 1;
         animation-timing-function: ease-in-out;
         animation-delay: 0s;
         animation-iteration-count: 1;
-        animation-name:loadAnimation;
-           
+        animation-name: loadAnimation;
+
     }
 
     .food-1 h4 {
@@ -416,7 +423,11 @@ opacity: 1;
     // }
 
     // .price 
-    .check {
+    .food-1 .check>p>i {
+        display: none;
+    }
+
+    .food-1 .check:hover {
         width: 70px;
         display: flex;
         justify-content: center;
@@ -426,24 +437,29 @@ opacity: 1;
         // color: transparent;
         background-color: #99e2d0;
         transition: all 0.1s;
+         animation-duration: 1s;
+        animation-timing-function: ease-in-out;
     }
 
-    .check p:nth-child(2) i {
-        font-size: 1.5em;
-    }
+    // .check p i {
+    //     font-size: 1.5em;
+    // }
 
-    .check:hover {
+    .food-1 p:hover {
         max-width: 100px;
         color: white;
         border-radius: 0 15px 15px 0px;
     }
 
-    .check:hover>p {
+    .food-1:hover>.check i {
+        display: block;
         animation: rotate 360;
         animation: spin 0.4s;
         transform: rotateZ(360deg);
         transition: 1s;
     }
+
+
 
     // .food-1:hover+.money {
     //     display: inline;
@@ -536,6 +552,20 @@ opacity: 1;
         left: -20px;
         top: -25px;
     }
+
+    .new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        margin-top: 4px;
+        margin-left: 250px;
+        margin-bottom: 0px;
+        color: white;
+        background-color: #99e2d0;
+        position: absolute;
+
+    }
 }
 
 // @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -556,7 +586,7 @@ opacity: 1;
 //         animation-iteration-count: 1;
 //         animation-name: loadAnimation;
 //     }
-    
+
 //     .rest-col img {
 //         object-fit: cover;
 //         height: 50%;
@@ -577,7 +607,12 @@ opacity: 1;
 
 // }
 
-// @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
+    footer {
+        width: 100%;
+    }
+}
+
 //     body {
 //         color: black;
 //         font-family: Roboto;
@@ -601,7 +636,7 @@ opacity: 1;
 //         justify-content: center;
 //         background-color: rgba(231, 230, 230, 0.74)
 //     }
-    
+
 //     .rest-col img {
 //         object-fit: cover;
 //         height: 50%;
