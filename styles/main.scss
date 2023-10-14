@@ -39,7 +39,7 @@ transform: translateY(0);
 opacity: 1;
 }
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) {
     .sub-heading {
         display: flex;
         width: 100%;
@@ -538,9 +538,86 @@ opacity: 1;
     }
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
+// @media screen and (max-width: 992px) and (min-width: 768px) {
+//     body {
+//         color: black;
+//         font-family: Roboto;
+//         margin: 0;
+//         // width: 92%;
+//         // margin: 0 4%;
+//         // border: 1px solid #99e2d0;
+//         // border-radius: 20px;
+//         // margin-top: 1%;
+//         // border: none;
+//         // width: 92%;
+//         animation-duration: 0.7s;
+//         animation-timing-function: ease-in-out;
+//         animation-delay: 0s;
+//         animation-iteration-count: 1;
+//         animation-name: loadAnimation;
+//     }
+    
+//     .rest-col img {
+//         object-fit: cover;
+//         height: 50%;
+//         width: 50%;
+//         border-top-right-radius: 15px;
+//         border-top-left-radius: 15px;
+//     }
 
+//     #image {
+//         width: 50%;
+//     }
 
-}
+//     #image-2 {
+//         width: 50%;
+//         height: 250px;
+//         object-fit: cover;
+//     }
 
-@media screen and (min-width: 992px) {}
+// }
+
+// @media screen and (min-width: 992px) {
+//     body {
+//         color: black;
+//         font-family: Roboto;
+//         margin: 0;
+//         // width: 92%;
+//         // margin: 0 4%;
+//         // border: 1px solid #99e2d0;
+//         // border-radius: 20px;
+//         // margin-top: 1%;
+//         // border: none;
+//         // width: 92%;
+//         animation-duration: 0.7s;
+//         animation-timing-function: ease-in-out;
+//         animation-delay: 0s;
+//         animation-iteration-count: 1;
+//         animation-name: loadAnimation;
+//     }
+//     .sub-heading {
+//         display: flex;
+//         width: 100%;
+//         justify-content: center;
+//         background-color: rgba(231, 230, 230, 0.74)
+//     }
+    
+//     .rest-col img {
+//         object-fit: cover;
+//         height: 50%;
+//         width: 50%;
+//         border-top-right-radius: 15px;
+//         border-top-left-radius: 15px;
+//     }
+
+//     #image {
+//         width: 50%;
+//     }
+
+//     #image-2 {
+//         width: 50%;
+//         height: 250px;
+//         object-fit: cover;
+//     }
+
+// }

@@ -33,7 +33,7 @@ body {
     opacity: 1;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) {
   .sub-heading {
     display: flex;
     width: 100%;
