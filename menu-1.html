@@ -7,10 +7,14 @@
     <script src="https://kit.fontawesome.com/571203546c.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/menu.css">
     <!-- <title>Inserting a Google Font</title> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <!-- Nav-section -->
 
@@ -23,92 +27,119 @@
         <div class="background">
             <img id="image" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette">
             <div class="restaurant-name">
-                <h2> The Full Palette</h2>
-                <div class="menu-title">
-                    <h3>ENTREES</h3>
-                </div>
-                <div class="nav-3">
-                    <div class="food-1">
-                        <div>
-                            <h4>Escargot</h4>
-                            <p>With southern French spices</p>
-                        </div>
-                        <!-- <div class="price"> -->
-                        <p><strong>25€</strong></p>
-                        <div class="check"> <p><i class="fa-regular fa-circle-check"></i></p></div>
-                        <!-- </div> -->
-                    </div>
-                    <div class="food-2">
-                        <h4>Duck Foie Gras</h4>
-                        <p>With black truffle shavings</p>
-                        <li><strong>35€</strong></li>
-                    </div>
-                    <div class="food-3">
-                        <h4>Fried Egg</h4>
-                        <p>Seasoned with truffle and...</p>
-                        <li><strong>20€</strong></li>
-                    </div>
-                </div>
-                <div class="menu-title">
-                    <h3>MAIN DISH</h3>
-                </div>
-                <div class="nav-4">
-                    <div class="food-1">
-                        <h4>Herb-Encrusted Steak</h4>
-                        <p>With delicately sliced and seasoned veg...</p>
-                        <li><strong>40€</strong></li>
-                    </div>
-                    <div class="food-2">
-                        <h4>Ox Tail Shepherds Pie</h4>
-                        <p>With black truffle and pureed parsnips</p>
-                        <li><strong>35€</strong></li>
-                    </div>
-                    <div class="food-3">
-                        <h4>Filet of Sole</h4>
-                        <p>With citrus dressing</p>
-                        <li><strong>44€</strong></li>
-                    </div>
-                </div>
-                <div class="menu-title">
-                    <h3>DESSERTS</h3>
-                </div>
-                <div class="nav-5">
-                    <div class="food-1">
-                        <h4>Paris-Brest</h4>
-                        <p>Revisited</p>
-                        <li><strong>18€</strong></li>
-                    </div>
-                    <div class="food-2">
-                        <h4>Chocolate Macaroons</h4>
-                        <p>With vanilla ice cream</p>
-                        <li><strong>22€</strong></li>
-                    </div>
-                    <div class="food-3">
-                        <h4>Chocolate Mousse</h4>
-                        <p>With spices and black truffle</p>
-                        <li><strong>23€</strong></li>
-                    </div>
-                </div>
+                <h2> The Full Palette <span class="hearts">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                            <defs>
+                                <linearGradient id="Gradient-1">
+                                    <stop class="stop-1" offset="0%" />
+                                    <stop class="stop-2" offset="100%" />
+                                    <stop class="stop-3" offset="0%" />
+                                </linearGradient>
+                                <LinearGradient id="Gradient-2" x1="0.5" x2="0.5" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="#9356DC"></stop>
+                                    <stop offset="100%" stop-color="#FF79DA"></stop>
+                                    <stop offset="0%" stop-color="#9356DC"></stop>
+                                </LinearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                </h2>
             </div>
+        </div>
+
+        <div class="menu-title">
+            <h3>ENTREES</h3>
+            Pearl
+        </div>
+        <div class="nav-3">
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Escargot <br> <span>With southern French spices</span></li>
+                    <li>25€</li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Duck Foie Gras <br> <span>With black truffle shavings</span></li>
+                    <li>35€</li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Fried Egg <br><span>Seasoned with truffle cream and butter</span></li>
+                    <li>20€</li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-title">
+            <h3>MAIN DISH</h3>
+        </div>
+        <div class="nav-4">
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Herb-Encrusted Steak <br><span>With delicately sliced and seasoned vegetables</span>
+                    </li>
+                    <li>40€</li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Ox Tail Shepherds Pie<br> <span>With black truffle and pureed parsnips</span></li>
+                    <li><strong>35€</strong></li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Filet of Sole <br> <span>With citrus dressing</span></li>
+                    <li>44€</li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-title">
+            <h3>DESSERTS</h3>
+        </div>
+        <div class="nav-4">
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Paris-Brest<br><span>Revisited</span></li>
+                    <li>18€</li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Chocolate Macaroons<br> <span>With vanilla ice cream</span></li>
+                    <li>22€</li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+            <div class="food-card">
+                <ul class="food-details">
+                    <li>Chocolate Mousse <br> <span>With spices and black truffle</span></li>
+                    <li>23€</li>
+                    <li><i class="fa-regular fa-circle-check"></i></li>
+                </ul>
+            </div>
+        </div>
         </div>
         </div>
     </main>
     <footer>
-        <section class="foot">
-            <div class="footer">
-                <div class="row">
-                    <img id="logo-2" src="./images/logo/ohmyfood.png" alt="ohmyfood">
-                </div>
-            </div>
-            <div class="row-2">
-                <p>Suggest a restaurant</p>
-                <p>Become a partner</p>
-            </div>
-            <div class="row-3">
-                <p>Legal</p>
-                <p>Contact</p>
-            </div>
-        </section>
+        <h2>ohmyfood</h2>
+        <ul>
+            <li> <a href="#"><i class="fa-solid fa-utensils"></i>Suggest a restaurant</a></li>
+            <li> <a href="#"><i class="fa-solid fa-handshake"></i>Become a partner</a></li>
+            <li> <a href="#">Legal</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
     </footer>
 
 </body>
