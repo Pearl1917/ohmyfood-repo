@@ -12,25 +12,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <!-- Nav-section -->
 
 <body>
+    <div class="loading-spinner"></div>
+
     <header class="top">
         <img id="logo" src="./images/logo/ohmyfood.png" alt="ohmyfood">
     </header>
     <nav>
         <div class="menu">
             <div class="sub-heading">
+                <i class="fa-solid fa-location-dot"></i>
                 <h4>Paris, Belleville</h4>
             </div>
         </div>
         <div class="nav">
             <h2>Book the menu you like</h2>
             <h3>Discover top-of-the-art restaurants we picked for you</h3>
-            <button class="purple"><a href="#restaurants">Explore our restaurants</a></button>
+            <form action="#restaurants">
+                <button class="purple">Explore our restaurants</button>
+            </form>
         </div>
     </nav>
     <main>
@@ -38,20 +43,18 @@
             <h2> How it works</h2>
             <div class="nav-2">
                 <div class="bubble-1">
-                    <button class="circle">1</button>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h4>Choose a restaurant</h4>
+                    <div class="circle">1</div>
+                    <button class="button"><i class="fa-solid fa-mobile-screen-button"></i>Choose a restaurant
+                    </button>
                 </div>
 
                 <div class="bubble-2">
-                    <button class="circle">2</button>
-                    <i class="fa-solid fa-list"></i>
-                    <h4>Create your menu</h4>
+                    <div class="circle">2</div>
+                    <button class="button"><i class="fa-solid fa-list"></i>Create your menu</button>
                 </div>
                 <div class="bubble-3">
-                    <button class="circle">3</button>
-                    <i class="fa-solid fa-store"></i>
-                    <h4>Go enjoy it at the restaurant</h4>
+                    <div class="circle">3</div>
+                    <button class="button"><i class="fa-solid fa-store"></i>Go enjoy it at the restaurant</button>
                 </div>
             </div>
         </section>
@@ -69,21 +72,21 @@
                         <h3>The Full Palette</h3>
                         <p>New York</p>
                         <div class="heart">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="32px" viewBox="0 0 512 512">
                                 <path
                                     d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
-                                    <defs>
-                                        <linearGradient id="Gradient-1">
-                                            <stop class="stop-1" offset="0%" />
-                                            <stop class="stop-2" offset="100%" />
-                                            <stop class="stop-3" offset="0%" />
-                                        </linearGradient> 
-                                        <LinearGradient id="Gradient-2" x1="0.5" x2="0.5" y1="0" y2="1">
-                                            <stop offset="0%" stop-color="#9356DC"></stop>
-                                            <stop offset="100%" stop-color="#FF79DA"></stop>
-                                            <stop offset="0%" stop-color="#9356DC"></stop>
-                                           </LinearGradient>
-                                    </defs>
+                                <defs>
+                                    <linearGradient id="Gradient-1">
+                                        <stop class="stop-1" offset="0%" />
+                                        <stop class="stop-2" offset="100%" />
+                                        <stop class="stop-3" offset="0%" />
+                                    </linearGradient>
+                                    <LinearGradient id="Gradient-2" x1="0.5" x2="0.5" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#9356DC"></stop>
+                                        <stop offset="100%" stop-color="#FF79DA"></stop>
+                                        <stop offset="0%" stop-color="#9356DC"></stop>
+                                    </LinearGradient>
+                                </defs>
                             </svg>
                         </div>
                     </div>
@@ -92,15 +95,15 @@
 
             <div class="rest-col">
                 <a href="menu-2.html">
-                    <!-- <div>
+                    <div>
                         <p class="new">New</p>
-                    </div> -->
+                    </div>
                     <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="The Enchanted Plate">
                     <div class="rest-detail">
                         <h3>The Enchanted Plate</h3>
                         <p>New York</p>
                         <div class="heart">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="32px" viewBox="0 0 512 512">
                                 <path
                                     d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
                             </svg>
@@ -110,12 +113,15 @@
             </div>
             <div class="rest-col">
                 <a href="menu-3.html">
+                    <div>
+                        <p class="new">New</p>
+                    </div>
                     <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille">
                     <div class="rest-detail">
                         <h3>Bastille</h3>
                         <p>New York</p>
                         <div class="heart">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="32px" viewBox="0 0 512 512">
                                 <path
                                     d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
                             </svg>
@@ -125,13 +131,16 @@
             </div>
             <div class="rest-col">
                 <a href="menu-4.html">
+                    <div>
+                        <p class="new">New</p>
+                    </div>
                     <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                         alt="Le Gourmand">
                     <div class="rest-detail">
                         <h3>Le Gourmand</h3>
                         <p>New York</p>
                         <div class="heart">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="32px" viewBox="0 0 512 512">
                                 <path
                                     d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
                             </svg>
