@@ -1,5 +1,5 @@
 Front End Project with HTML,CSS,SASS
 
-you can visit the preview site here Website like: .
+you can visit the preview site here Website like: https://pearl1917.github.io/ohmyfood-repo/
 
-github repo: 
+github repo: https://github.com/Pearl1917/ohmyfood-repo#ohmyfood-repo

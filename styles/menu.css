@@ -18,6 +18,14 @@ body {
     opacity: 0;
   }
 }
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
 @keyframes loadAnimation {
   0% {
     transform: translateY(-100px);
@@ -200,7 +208,6 @@ body {
   max-width: 0px;
   height: 100%;
   color: transparent;
-  background-color: #99e2d0;
   transition: all 0.1s;
 }
 .food-details li:nth-child(3) i {
@@ -210,6 +217,7 @@ body {
   max-width: 100px;
   color: white;
   border-radius: 0 15px 15px 0px;
+  background-color: #99e2d0;
 }
 .food-details:hover > li:nth-child(3) i {
   animation: rotate 360;
