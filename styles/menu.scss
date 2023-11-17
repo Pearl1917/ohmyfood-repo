@@ -113,7 +113,7 @@ body {
         background-color: #f6f6f6;
         border-radius: 30px;
         position: relative;
-        top: -40px;
+        top: -30px;
 
 
         h2 {
@@ -171,7 +171,7 @@ body {
         width: 90%;
 
         .food-card {
-            width: 100%;
+            width: 95%;
         }
     }
 
@@ -227,8 +227,11 @@ body {
             font-family: $font-text;
             font-weight: bold;
             flex: 1 1 auto;
-            min-width: 0;
+            min-width: 1px;
             font-size: large;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         &:nth-child(2) {
@@ -264,8 +267,9 @@ body {
 
             i {
                 animation: rotate 360;
-                -webkit-animation: spin .4s;
-                animation: spin .4s;
+                -webkit-animation: rotate 360;
+                -webkit-animation: spin 1s;
+                animation: spin 1s;
                 transform: rotateZ(360deg);
                 transition: 1.5s;
 
@@ -328,7 +332,8 @@ footer {
     }
 
     .food-details {
-        width: 350px;
+        width: 100%;
+        margin-left: 6px;
     }
 
 }

@@ -163,7 +163,8 @@ main .How-it-works {
   animation-name: loadAnimation;
 }
 main .How-it-works h2 {
-  text-align: center;
+  margin-left: 3%;
+  padding-top: 20px;
 }
 main .How-it-works .nav-2 {
   display: flex;
@@ -172,11 +173,14 @@ main .How-it-works .nav-2 {
   align-items: center;
   text-align: center;
 }
-main .How-it-works .nav-2 .button {
+main .How-it-works .nav-2 .bubble-1 {
+  width: 90%;
+}
+main .How-it-works .nav-2 .bubble-1 .button {
   background-color: #f2f2f2;
   border: none;
   border-radius: 20px;
-  width: 700px;
+  width: 95%;
   height: 50px;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -187,13 +191,12 @@ main .How-it-works .nav-2 .button {
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 20px;
   cursor: pointer;
 }
-main .How-it-works .nav-2 .button:hover {
+main .How-it-works .nav-2 .bubble-1 .button:hover {
   background-color: #eae3f3;
 }
-main .How-it-works .nav-2 .circle {
+main .How-it-works .nav-2 .bubble-1 .circle {
   display: flex;
   justify-content: center;
   color: white;
@@ -209,14 +212,14 @@ main .How-it-works .nav-2 .circle {
   align-self: center;
   position: absolute;
 }
-main .How-it-works .nav-2 .fa-mobile-screen-button {
+main .How-it-works .nav-2 .bubble-1 .fa-mobile-screen-button {
   align-self: center;
   margin-right: 10px;
 }
-main .How-it-works .nav-2 h4 {
+main .How-it-works .nav-2 .bubble-1 h4 {
   margin-top: 15px;
 }
-main .How-it-works .nav-2 .circle {
+main .How-it-works .nav-2 .bubble-1 .circle {
   display: flex;
   justify-content: center;
   color: white;
@@ -232,14 +235,14 @@ main .How-it-works .nav-2 .circle {
   align-self: center;
   position: absolute;
 }
-main .How-it-works .nav-2 .fa-list {
+main .How-it-works .nav-2 .bubble-1 .fa-list {
   align-self: center;
   margin-right: 10px;
 }
-main .How-it-works .nav-2 h4 {
+main .How-it-works .nav-2 .bubble-1 h4 {
   margin-top: 15px;
 }
-main .How-it-works .nav-2 .circle {
+main .How-it-works .nav-2 .bubble-1 .circle {
   display: flex;
   justify-content: center;
   color: white;
@@ -255,11 +258,11 @@ main .How-it-works .nav-2 .circle {
   align-self: center;
   position: absolute;
 }
-main .How-it-works .nav-2 .fa-store {
+main .How-it-works .nav-2 .bubble-1 .fa-store {
   align-self: center;
   margin-right: 10px;
 }
-main .How-it-works .nav-2 h4 {
+main .How-it-works .nav-2 .bubble-1 h4 {
   margin-top: 15px;
 }
 
@@ -403,15 +406,6 @@ footer ul i {
   }
   main .How-it-works .nav-2 .button:hover {
     background-color: rgba(235, 224, 247, 0.952);
-  }
-  main .How-it-works .nav-2 .circle {
-    left: 25px;
-  }
-  main .How-it-works .nav-2 .circle {
-    left: 25px;
-  }
-  main .How-it-works .nav-2 .circle {
-    left: 25px;
   }
   .Restaurants .rest-col {
     margin-left: 8px;
