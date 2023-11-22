@@ -145,7 +145,10 @@ body {
 .background .nav-3 .food-card {
   width: 95%;
 }
-.background .purple-2 {
+.background #button-2 {
+  align-self: center;
+}
+.background #button-2 .purple-2 {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 20px;
@@ -155,11 +158,9 @@ body {
   border-right: #9356DC;
   width: 200px;
   height: 40px;
-  align-self: center;
   margin-top: 10px;
-  margin-left: 500px;
 }
-.background .purple-2 a {
+.background #button-2 .purple-2 a {
   color: white;
   text-decoration: none;
 }
@@ -243,11 +244,6 @@ footer {
   animation-name: loadAnimation;
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  .background .purple-2 {
-    margin-left: 310px;
-  }
-}
 @media (max-width: 768px) {
   .background #image {
     height: auto;
@@ -263,9 +259,6 @@ footer {
   .background .nav-3 {
     align-self: auto;
     width: auto;
-  }
-  .background .purple-2 {
-    margin-left: 85px;
   }
   .food-details {
     width: 100%;
